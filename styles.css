@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lexend Deca", sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    overflow: hidden;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 100vh;
+    padding: 2rem;
+    
+    
+   
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 320px;
+    height: 470px;
+    padding: 2rem;
+    position: relative;
+}
+#card1{
+ 
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+   
+}
+#card2{
+  
+   background-color: hsl(184, 100%, 22%);
+  
+}
+#card3{
+   
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
+   
+}
+img{
+    margin-bottom: 36px;
+   
+}
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color:  hsl(0, 0%, 95%);
+    margin-bottom: 1.5rem;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+a{
+    color: hsl(0, 0%, 95%);
+    text-decoration: none;
+}
+.btn{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid hsl(0, 0%, 95%);
+    display: inline-block;
+    width: 140px;
+    padding: 12px;
+    bottom: 40px;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    transform: scale(1.1);
+}
+.attribution{
+    width: 100%;
+    color: black;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    text-align: center;  
+    font-weight: bold;
+    
+}
+.attribution a{
+   text-decoration: underline;
+    color: blue;
+    
+}
+@media only screen and (max-width: 1050px){
+    body{
+        display: flex;
+        width: 100%;
+        overflow: scroll;
+        flex-wrap: wrap;
+    }
+    .cards{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+    #card1{
+ 
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 7px 7px 0 0;
+       
+    }
+    #card2{
+      
+       background-color: hsl(184, 100%, 22%);
+      
+    }
+    #card3{
+       
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 7px 7px;
+       
+    }
+    .attribution{
+        position: relative;
+        width: auto;
+        padding-bottom: 10px;
+    }
+}
